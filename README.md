@@ -14,6 +14,12 @@ A template project to quickly get started with [OpenRHI](https://github.com/adri
 4. Edit the following lines in `CMakeLists.txt`:
 ```cmake
 project(my-project) # Replace with your project name
+
+FetchContent_Declare(
+    orhi
+    GIT_REPOSITORY https://github.com/adriengivry/orhi.git
+    GIT_TAG main # (optional) Replace with the version you want to use, e.g. v0.1.0
+)
 ```
 5. Generate projects:
 ```powershell
